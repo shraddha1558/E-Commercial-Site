@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto' ,'sans-serif';
+    background-color: #f1f3f6;
+}
+
+:root{
+    --primary-color: #2874f0;
+}
+
+.container {
+    padding: 0,8px;
+
+}
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    height: 56px;
+
+}
+
+header .nav-container{
+    display: flex;
+    align-items:center;
+    height: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+
+}
+header .nav-container .logo{
+    display: flex;
+    min-width: 137px;
+    justify-content: flex-end;
+
+}
+header .nav-container .logo img{
+    width: 75px;
+
+}
+header .nav-container .search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+
+}
+
+header .nav-container .search .search-container{
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 /23%);
+    display: flex;
+}
+header .nav-container .search .search-container input{
+    width: calc(100% - 32px);
+    padding: 16px;
+    outline: none;
+    border: none;
+}
+header .nav-container .search .search-container button{
+    width: 36px;
+    height: 100%;
+    padding : 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+header .login{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+header .login button{
+    width: 122px;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+header .become-seller{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin : 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+header .more{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+header .more svg{
+    margin-left: 8px;
+    rotate: -90deg;
+}
+header .cart{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color : white;
+    font-size: 16px;
+}
+header .cart svg{
+    margin-right: 8px;
+}
+.section1{
+    width: 100%;
+    height: 122px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+
+}
+.section1-container{
+    width: 1228px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.section1-container-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.section1-container-item img{
+    height: 64px;
+    width: 64;    
+}
+.section2-container img{
+    margin-top: 16px;
+    height: 280px;
+    width: 100%;
+    display: block;
+    /* background-image: url('https://rukminim1.flixcart.com/fk-p-flap/50/50/image/a1c75ace6eb4ddea.jpg?q=50'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* color: inherit; */
+
+}
+.section4-container{
+    margin-top: 8px;
+    height: 362px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.section4-container-offer{
+    width: 230px;
+    height: 100%;
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.section4-container-offer-viewall{
+    margin-top: 132px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section4-container-offer-viewall button{
+    margin-top: 24px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px 0 ;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.section4-conatiner-list{
+    height: 100%;
+    width: calc(100%-230px);
+    display: flex;
+    overflow-x: auto;
+
+}
+.section4-container-item{
+    width: 232px;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.section4-container-item img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.section4-container-item-head{
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.section4-container-item-price{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #388e3c;
+
+
+}
+.section4-container-item-explore{
+    opacity: 0.6;
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 12px;
+}
+/* .alag{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+} */
+.detail {
+    /* width: 100%; */
+    display:block;
+    padding: 0 25px;
+    background-color: #fff;
+    color: #878787; 
+    box-sizing: border-box;
+    margin: 24px;
+    height: 1750px;
+
+
+}
+.edit{
+    line-height: 16px;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 15px;
+}
+.footer{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0;
+    text-align: left;
+    padding: 0;
+    background-color: #172337;
+    /* min-width: 2000px; */
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+    height: 300px;
+    justify-content: space-between;
+
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    margin-left: 65px;
+    margin-right: 40px;
+    padding-top: 40px;
+    /* width: 90%!important; */
+   justify-content: space-between;
+
+
+}
+.about{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.inside{
+    line-height: 2;
+    color: #fff;
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    flex-direction: column;
+    max-width: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.verticle{
+    border: .6px solid #878787;
+    height: 200px;
+    position: absolute;
+    left: 65%;
+
+}
